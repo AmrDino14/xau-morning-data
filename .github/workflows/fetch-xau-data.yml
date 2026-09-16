@@ -1,0 +1,62 @@
+name: Fetch XAUUSD data
+
+# Publishes spot XAUUSD levels every weekday at 06:50 New York, ten minutes before
+# the morning-brief agent reads data/xau.json from raw.githubusercontent.com.
+# Two schedules cover daylight saving; the gate step drops whichever one is not 06:00 local.
+
+on:
+  schedule:
+    - cron: "50 10 * * 1-5"
+    - cron: "50 11 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-xau-data
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Skip the duplicate schedule
+        id: gate
+        run: |
+          hour=$(TZ=America/New_York date +%H)
+          if [ "${{ github.event_name }}" != "workflow_dispatch" ] && [ "$hour" != "06" ]; then
+            echo "New York hour is $hour, not 06 - this is the daylight-saving duplicate. Skipping."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Fetch spot XAUUSD candles from Dukascopy
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          python3 xau_data.py > data/xau.json || echo "script exit code $?"
+          head -c 400 data/xau.json
+
+      - name: Fetch this week's economic calendar
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          curl -sS --max-time 60 -o data/calendar.json \
+            "https://nfs.faireconomy.media/ff_calendar_thisweek.json" \
+            || echo '{"error":"calendar fetch failed"}' > data/calendar.json
+          wc -c data/calendar.json
+
+      - name: Commit the data
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          git config user.name "xau-data-bot"
+          git config user.email "actions@github.com"
+          git add data/xau.json data/calendar.json
+          git commit -m "Data for $(TZ=America/New_York date +'%Y-%m-%d %H:%M %Z')" || echo "nothing to commit"
+          git push
