@@ -25,10 +25,10 @@ FAILED = []
 
 def fetch(path):
     """Decompressed bytes; b"" for an empty or missing file; None when every attempt failed."""
-    for attempt in range(5):
+    for attempt in range(3):
         try:
             req = urllib.request.Request(BASE + path, headers={"User-Agent": "Mozilla/5.0"})
-            raw = urllib.request.urlopen(req, timeout=45).read()
+            raw = urllib.request.urlopen(req, timeout=30).read()
             return lzma.decompress(raw) if raw else b""
         except urllib.error.HTTPError as e:
             if e.code == 404:
