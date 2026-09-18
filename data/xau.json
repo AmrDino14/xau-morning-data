@@ -1,9 +1,9 @@
 {
  "source": "Dukascopy public datafeed, spot XAU/USD BID prices (no futures)",
- "generated_ny": "Fri Sep 18 2026 11:56",
+ "generated_ny": "Fri Sep 18 2026 12:05",
  "trading_day": "2026-09-18",
- "last_price_time_ny": "Fri Sep 18 10:59",
- "spot": 4352.76,
+ "last_price_time_ny": "Fri Sep 18 11:59",
+ "spot": 4356.47,
  "prior_day": {
   "date": "2026-09-17",
   "open": 4262.43,
@@ -11,7 +11,7 @@
   "low": 4257.11,
   "close": 4341.06
  },
- "change_vs_prior_close": 11.7,
+ "change_vs_prior_close": 15.41,
  "overnight": {
   "from_ny": "Thu 18:00",
   "to_ny": "Fri 07:00",
@@ -25,28 +25,28 @@
   "high": 4442.7,
   "low": 4291.95
  },
- "atr14_daily": 96.95,
+ "atr14_daily": 97.47,
  "trend": {
   "daily": {
    "close": 4341.06,
-   "ema20": 4366.07,
-   "ema50": 4342.51,
+   "ema20": 4369.68,
+   "ema50": 4341.02,
    "last_two_swing_highs": [
     4696.64,
-    4510.64
+    4490.62
    ],
    "last_two_swing_lows": [
-    4323.93,
-    4322.52
+    4310.38,
+    4323.93
    ],
-   "swings": "lower highs and lower lows",
+   "swings": "mixed swings",
    "ema_stack": "mixed",
    "label": "Range"
   },
   "4h": {
-   "close": 4352.76,
-   "ema20": 4340.64,
-   "ema50": 4355.37,
+   "close": 4356.47,
+   "ema20": 4341.07,
+   "ema50": 4358.81,
    "last_two_swing_highs": [
     4380.81,
     4399.36
@@ -60,9 +60,9 @@
    "label": "Range"
   },
   "1h": {
-   "close": 4352.76,
-   "ema20": 4362.84,
-   "ema50": 4345.64,
+   "close": 4356.47,
+   "ema20": 4362.24,
+   "ema50": 4346.0,
    "last_two_swing_highs": [
     4380.81,
     4399.36
@@ -78,16 +78,17 @@
  },
  "resistance_levels_nearest_first": [
   {
-   "price": 4366.29,
+   "price": 4365.96,
    "zone": [
-    4366.05,
+    4365.31,
     4366.52
    ],
    "sources": [
     "4H swing high",
+    "4H swing low",
     "Daily swing low"
    ],
-   "touches": 2
+   "touches": 3
   },
   {
    "price": 4374.47,
@@ -177,16 +178,15 @@
    "touches": 3
   },
   {
-   "price": 4322.99,
+   "price": 4323.93,
    "zone": [
-    4322.52,
+    4323.93,
     4323.93
    ],
    "sources": [
-    "4H swing low",
     "Daily swing low"
    ],
-   "touches": 3
+   "touches": 1
   },
   {
    "price": 4317.24,
@@ -242,7 +242,7 @@
      "12:00_ny": 4399.17
     },
     "price_vs_line_now": "below",
-    "distance_now": -46.46
+    "distance_now": -42.75
    }
   },
   "1h": {
@@ -253,15 +253,15 @@
  "recent_daily": [
   {
    "trading_day": "Fri Sep 04",
-   "o": 4472.61,
-   "h": 4479.99,
-   "l": 4471.1,
-   "c": 4479.81
+   "o": 4479.9,
+   "h": 4490.62,
+   "l": 4365.31,
+   "c": 4430.45
   },
   {
    "trading_day": "Mon Sep 07",
-   "o": 4425.86,
-   "h": 4434.93,
+   "o": 4422.91,
+   "h": 4429.23,
    "l": 4380.94,
    "c": 4404.77
   },
@@ -405,17 +405,10 @@
    "o": 4368.56,
    "h": 4375.27,
    "l": 4342.44,
-   "c": 4352.76
+   "c": 4356.47
   }
  ],
  "recent_1h": [
-  {
-   "ny": "Thu Sep 17 10:00",
-   "o": 4366.35,
-   "h": 4379.7,
-   "l": 4351.94,
-   "c": 4353.72
-  },
   {
    "ny": "Thu Sep 17 11:00",
    "o": 4353.8,
@@ -576,14 +569,21 @@
    "h": 4361.55,
    "l": 4342.44,
    "c": 4352.76
+  },
+  {
+   "ny": "Fri Sep 18 11:00",
+   "o": 4352.85,
+   "h": 4357.89,
+   "l": 4347.73,
+   "c": 4356.47
   }
  ],
  "failed_files": [
+  "2026/08/01/BID_candles_min_1.bi5",
   "2025/10/BID_candles_hour_1.bi5",
-  "2026/07/BID_candles_hour_1.bi5",
-  "2025/09/BID_candles_hour_1.bi5",
-  "2025/08/BID_candles_hour_1.bi5",
   "2026/08/02/BID_candles_min_1.bi5",
-  "2026/08/04/BID_candles_min_1.bi5"
+  "2026/08/03/BID_candles_min_1.bi5",
+  "2026/08/06/BID_candles_min_1.bi5",
+  "2026/08/05/BID_candles_min_1.bi5"
  ]
 }
