@@ -1,0 +1,860 @@
+{
+ "source": "Yahoo Finance futures, about 10 minutes delayed; one contract month per symbol",
+ "client": "curl_cffi (browser fingerprint)",
+ "generated_ny": "Fri Sep 18 2026 15:38",
+ "trading_day": "2026-09-18",
+ "symbols": {
+  "ES": {
+   "name": "E-mini S&P 500",
+   "contract": "Dec 2026",
+   "contract_code": "ESZ26",
+   "yahoo_ticker": "ESZ26.CME",
+   "tick": 0.25,
+   "point_value_usd": 50,
+   "micro": "MES",
+   "micro_point_value_usd": 5,
+   "last": 7708.25,
+   "last_trade_ny": "Fri Sep 18 15:28",
+   "prior_day": {
+    "date": "2026-09-17",
+    "open": 7624.0,
+    "high": 7722.25,
+    "low": 7617.5,
+    "close": 7702.25
+   },
+   "change_vs_prior_close": 6.0,
+   "prior_rth": {
+    "date": "2026-09-17",
+    "open": 7713.5,
+    "high": 7716.25,
+    "low": 7680.5,
+    "close": 7707.25
+   },
+   "overnight": {
+    "from_ny": "Thu 18:00",
+    "to_ny": "Fri 09:30",
+    "high": 7739.25,
+    "low": 7692.25,
+    "range": 47.0,
+    "pct_of_atr14": 61
+   },
+   "week_open": 7676.0,
+   "prior_week": {
+    "high": 7792.75,
+    "low": 7650.75
+   },
+   "atr14_daily": 76.61,
+   "trend": {
+    "daily": {
+     "close": 7702.25,
+     "ema20": 7722.25,
+     "ema50": 7689.5,
+     "last_two_swing_highs": [
+      7850.75,
+      7833.5
+     ],
+     "last_two_swing_lows": [
+      7685.5,
+      7650.75
+     ],
+     "swings": "lower highs and lower lows",
+     "ema_stack": "mixed",
+     "label": "Range"
+    },
+    "4h": {
+     "close": 7708.25,
+     "ema20": 7694.93,
+     "ema50": 7703.39,
+     "last_two_swing_highs": [
+      7722.25,
+      7739.25
+     ],
+     "last_two_swing_lows": [
+      7575.0,
+      7696.0
+     ],
+     "swings": "higher highs and higher lows",
+     "ema_stack": "mixed",
+     "label": "Range"
+    },
+    "1h": {
+     "close": 7708.25,
+     "ema20": 7704.41,
+     "ema50": 7697.27,
+     "last_two_swing_highs": [
+      7715.5,
+      7739.25
+     ],
+     "last_two_swing_lows": [
+      7696.0,
+      7675.0
+     ],
+     "swings": "mixed swings",
+     "ema_stack": "price > EMA20 > EMA50",
+     "label": "Range"
+    }
+   },
+   "resistance_levels_nearest_first": [
+    {
+     "price": 7712.25,
+     "zone": [
+      7712.25,
+      7712.25
+     ],
+     "sources": [
+      "Daily swing high"
+     ],
+     "touches": 1
+    },
+    {
+     "price": 7721.0,
+     "zone": [
+      7716.25,
+      7724.0
+     ],
+     "sources": [
+      "4H swing high",
+      "4H swing low",
+      "Daily swing low",
+      "Prior RTH high",
+      "Prior day high"
+     ],
+     "touches": 7
+    },
+    {
+     "price": 7731.0,
+     "zone": [
+      7730.0,
+      7732.25
+     ],
+     "sources": [
+      "4H swing high",
+      "4H swing low"
+     ],
+     "touches": 3
+    },
+    {
+     "price": 7739.5,
+     "zone": [
+      7737.75,
+      7743.0
+     ],
+     "sources": [
+      "4H swing high",
+      "4H swing low",
+      "Overnight high"
+     ],
+     "touches": 6
+    },
+    {
+     "price": 7751.5,
+     "zone": [
+      7750.5,
+      7752.0
+     ],
+     "sources": [
+      "4H swing high",
+      "4H swing low"
+     ],
+     "touches": 3
+    },
+    {
+     "price": 7757.75,
+     "zone": [
+      7757.0,
+      7758.0
+     ],
+     "sources": [
+      "4H swing high",
+      "Daily swing high"
+     ],
+     "touches": 3
+    }
+   ],
+   "support_levels_nearest_first": [
+    {
+     "price": 7707.25,
+     "zone": [
+      7707.25,
+      7707.25
+     ],
+     "sources": [
+      "Prior RTH close"
+     ],
+     "touches": 1
+    },
+    {
+     "price": 7696.5,
+     "zone": [
+      7692.25,
+      7702.25
+     ],
+     "sources": [
+      "4H swing high",
+      "4H swing low",
+      "Daily swing high",
+      "Overnight low",
+      "Prior day close"
+     ],
+     "touches": 7
+    },
+    {
+     "price": 7686.25,
+     "zone": [
+      7685.5,
+      7688.0
+     ],
+     "sources": [
+      "4H swing low",
+      "Daily swing low"
+     ],
+     "touches": 3
+    },
+    {
+     "price": 7680.5,
+     "zone": [
+      7680.5,
+      7680.5
+     ],
+     "sources": [
+      "Prior RTH low"
+     ],
+     "touches": 1
+    },
+    {
+     "price": 7676.0,
+     "zone": [
+      7676.0,
+      7676.0
+     ],
+     "sources": [
+      "Week open"
+     ],
+     "touches": 1
+    },
+    {
+     "price": 7669.0,
+     "zone": [
+      7669.0,
+      7669.0
+     ],
+     "sources": [
+      "Daily swing high"
+     ],
+     "touches": 1
+    }
+   ],
+   "trendlines": {
+    "4h": {
+     "rising_support": null,
+     "falling_resistance": {
+      "timeframe": "4h",
+      "anchor_1": {
+       "time_ny": "Fri Sep 11 09:00",
+       "price": 7750.5
+      },
+      "anchor_2": {
+       "time_ny": "Fri Sep 18 01:00",
+       "price": 7739.25
+      },
+      "line_now": 7738.5,
+      "projected": {
+       "08:00_ny": 7738.75,
+       "09:30_ny": 7738.75,
+       "12:00_ny": 7738.5
+      },
+      "price_vs_line_now": "below",
+      "distance_now": -30.16
+     }
+    },
+    "1h": {
+     "rising_support": {
+      "timeframe": "1h",
+      "anchor_1": {
+       "time_ny": "Thu Sep 17 01:00",
+       "price": 7656.25
+      },
+      "anchor_2": {
+       "time_ny": "Fri Sep 18 12:00",
+       "price": 7675.0
+      },
+      "line_now": 7676.75,
+      "projected": {
+       "08:00_ny": 7672.75,
+       "09:30_ny": 7673.75,
+       "12:00_ny": 7675.0
+      },
+      "price_vs_line_now": "above",
+      "distance_now": 31.39
+     },
+     "falling_resistance": null
+    }
+   }
+  },
+  "NQ": {
+   "name": "E-mini Nasdaq-100",
+   "contract": "Dec 2026",
+   "contract_code": "NQZ26",
+   "yahoo_ticker": "NQZ26.CME",
+   "tick": 0.25,
+   "point_value_usd": 20,
+   "micro": "MNQ",
+   "micro_point_value_usd": 2,
+   "last": 29838.25,
+   "last_trade_ny": "Fri Sep 18 15:28",
+   "prior_day": {
+    "date": "2026-09-17",
+    "open": 29271.0,
+    "high": 29793.25,
+    "low": 29247.75,
+    "close": 29720.5
+   },
+   "change_vs_prior_close": 117.75,
+   "prior_rth": {
+    "date": "2026-09-17",
+    "open": 29718.25,
+    "high": 29793.25,
+    "low": 29605.75,
+    "close": 29744.5
+   },
+   "overnight": {
+    "from_ny": "Thu 18:00",
+    "to_ny": "Fri 09:30",
+    "high": 29966.75,
+    "low": 29648.0,
+    "range": 318.75,
+    "pct_of_atr14": 79
+   },
+   "week_open": 29294.75,
+   "prior_week": {
+    "high": 30061.25,
+    "low": 29333.0
+   },
+   "atr14_daily": 405.05,
+   "trend": {
+    "daily": {
+     "close": 29720.5,
+     "ema20": 29617.89,
+     "ema50": 29605.89,
+     "last_two_swing_highs": [
+      30109.0,
+      30061.25
+     ],
+     "last_two_swing_lows": [
+      29245.0,
+      29219.75
+     ],
+     "swings": "lower highs and lower lows",
+     "ema_stack": "price > EMA20 > EMA50",
+     "label": "Range"
+    },
+    "4h": {
+     "close": 29838.25,
+     "ema20": 29631.28,
+     "ema50": 29583.99,
+     "last_two_swing_highs": [
+      29549.75,
+      29966.75
+     ],
+     "last_two_swing_lows": [
+      29053.0,
+      29648.0
+     ],
+     "swings": "higher highs and higher lows",
+     "ema_stack": "price > EMA20 > EMA50",
+     "label": "Uptrend"
+    },
+    "1h": {
+     "close": 29838.25,
+     "ema20": 29781.82,
+     "ema50": 29680.92,
+     "last_two_swing_highs": [
+      29793.25,
+      29966.75
+     ],
+     "last_two_swing_lows": [
+      29648.0,
+      29659.25
+     ],
+     "swings": "higher highs and higher lows",
+     "ema_stack": "price > EMA20 > EMA50",
+     "label": "Uptrend"
+    }
+   },
+   "resistance_levels_nearest_first": [
+    {
+     "price": 29858.75,
+     "zone": [
+      29858.75,
+      29858.75
+     ],
+     "sources": [
+      "4H swing high"
+     ],
+     "touches": 1
+    },
+    {
+     "price": 29928.25,
+     "zone": [
+      29928.25,
+      29928.25
+     ],
+     "sources": [
+      "4H swing high"
+     ],
+     "touches": 1
+    },
+    {
+     "price": 29966.75,
+     "zone": [
+      29966.75,
+      29966.75
+     ],
+     "sources": [
+      "4H swing high",
+      "Overnight high"
+     ],
+     "touches": 2
+    },
+    {
+     "price": 29998.25,
+     "zone": [
+      29998.25,
+      29998.25
+     ],
+     "sources": [
+      "4H swing high"
+     ],
+     "touches": 1
+    },
+    {
+     "price": 30061.25,
+     "zone": [
+      30061.25,
+      30061.25
+     ],
+     "sources": [
+      "4H swing high",
+      "Daily swing high",
+      "Prior week high"
+     ],
+     "touches": 3
+    },
+    {
+     "price": 30109.0,
+     "zone": [
+      30109.0,
+      30109.0
+     ],
+     "sources": [
+      "4H swing high",
+      "Daily swing high"
+     ],
+     "touches": 2
+    }
+   ],
+   "support_levels_nearest_first": [
+    {
+     "price": 29828.5,
+     "zone": [
+      29824.25,
+      29830.5
+     ],
+     "sources": [
+      "4H swing high"
+     ],
+     "touches": 3
+    },
+    {
+     "price": 29793.0,
+     "zone": [
+      29790.75,
+      29794.5
+     ],
+     "sources": [
+      "4H swing high",
+      "Prior RTH high",
+      "Prior day high"
+     ],
+     "touches": 4
+    },
+    {
+     "price": 29726.25,
+     "zone": [
+      29700.0,
+      29764.5
+     ],
+     "sources": [
+      "4H swing high",
+      "4H swing low",
+      "Prior RTH close",
+      "Prior day close"
+     ],
+     "touches": 6
+    },
+    {
+     "price": 29646.25,
+     "zone": [
+      29629.5,
+      29659.75
+     ],
+     "sources": [
+      "4H swing low",
+      "Daily swing high",
+      "Daily swing low",
+      "Overnight low"
+     ],
+     "touches": 6
+    },
+    {
+     "price": 29605.0,
+     "zone": [
+      29604.5,
+      29605.75
+     ],
+     "sources": [
+      "4H swing high",
+      "Prior RTH low"
+     ],
+     "touches": 2
+    },
+    {
+     "price": 29575.75,
+     "zone": [
+      29575.75,
+      29575.75
+     ],
+     "sources": [
+      "4H swing low"
+     ],
+     "touches": 1
+    }
+   ],
+   "trendlines": {
+    "4h": {
+     "rising_support": null,
+     "falling_resistance": null
+    },
+    "1h": {
+     "rising_support": {
+      "timeframe": "1h",
+      "anchor_1": {
+       "time_ny": "Thu Sep 17 21:00",
+       "price": 29648.0
+      },
+      "anchor_2": {
+       "time_ny": "Fri Sep 18 12:00",
+       "price": 29659.25
+      },
+      "line_now": 29661.75,
+      "projected": {
+       "08:00_ny": 29656.25,
+       "09:30_ny": 29657.5,
+       "12:00_ny": 29659.25
+      },
+      "price_vs_line_now": "above",
+      "distance_now": 176.4
+     },
+     "falling_resistance": null
+    }
+   }
+  },
+  "GC": {
+   "name": "Gold (COMEX)",
+   "contract": "Dec 2026",
+   "contract_code": "GCZ26",
+   "yahoo_ticker": "GCZ26.CMX",
+   "tick": 0.1,
+   "point_value_usd": 100,
+   "micro": "MGC",
+   "micro_point_value_usd": 10,
+   "last": 4418.1,
+   "last_trade_ny": "Fri Sep 18 15:28",
+   "prior_day": {
+    "date": "2026-09-17",
+    "open": 4301.4,
+    "high": 4423.3,
+    "low": 4294.5,
+    "close": 4380.6
+   },
+   "change_vs_prior_close": 37.5,
+   "prior_rth": null,
+   "overnight": {
+    "from_ny": "Thu 18:00",
+    "to_ny": "Fri 08:20",
+    "high": 4439.8,
+    "low": 4372.2,
+    "range": 67.6,
+    "pct_of_atr14": 57
+   },
+   "week_open": 4371.9,
+   "prior_week": {
+    "high": 4488.8,
+    "low": 4333.0
+   },
+   "atr14_daily": 119.41,
+   "trend": {
+    "daily": {
+     "close": 4380.6,
+     "ema20": 4418.18,
+     "ema50": 4400.21,
+     "last_two_swing_highs": [
+      4755.0,
+      4558.5
+     ],
+     "last_two_swing_lows": [
+      4378.0,
+      4329.2
+     ],
+     "swings": "lower highs and lower lows",
+     "ema_stack": "mixed",
+     "label": "Range"
+    },
+    "4h": {
+     "close": 4418.1,
+     "ema20": 4386.88,
+     "ema50": 4398.71,
+     "last_two_swing_highs": [
+      4423.3,
+      4439.8
+     ],
+     "last_two_swing_lows": [
+      4273.3,
+      4372.2
+     ],
+     "swings": "higher highs and higher lows",
+     "ema_stack": "mixed",
+     "label": "Range"
+    },
+    "1h": {
+     "close": 4418.1,
+     "ema20": 4409.48,
+     "ema50": 4392.15,
+     "last_two_swing_highs": [
+      4439.8,
+      4435.2
+     ],
+     "last_two_swing_lows": [
+      4372.2,
+      4381.0
+     ],
+     "swings": "mixed swings",
+     "ema_stack": "price > EMA20 > EMA50",
+     "label": "Range"
+    }
+   },
+   "resistance_levels_nearest_first": [
+    {
+     "price": 4422.0,
+     "zone": [
+      4419.3,
+      4423.3
+     ],
+     "sources": [
+      "4H swing high",
+      "4H swing low",
+      "Prior day high"
+     ],
+     "touches": 3
+    },
+    {
+     "price": 4442.9,
+     "zone": [
+      4439.8,
+      4445.6
+     ],
+     "sources": [
+      "4H swing high",
+      "4H swing low",
+      "Overnight high"
+     ],
+     "touches": 5
+    },
+    {
+     "price": 4459.5,
+     "zone": [
+      4459.5,
+      4459.5
+     ],
+     "sources": [
+      "Daily swing low"
+     ],
+     "touches": 1
+    },
+    {
+     "price": 4466.1,
+     "zone": [
+      4465.9,
+      4466.4
+     ],
+     "sources": [
+      "4H swing low",
+      "Daily swing high"
+     ],
+     "touches": 2
+    },
+    {
+     "price": 4479.4,
+     "zone": [
+      4479.0,
+      4479.9
+     ],
+     "sources": [
+      "4H swing high"
+     ],
+     "touches": 2
+    },
+    {
+     "price": 4488.8,
+     "zone": [
+      4488.8,
+      4488.8
+     ],
+     "sources": [
+      "Prior week high"
+     ],
+     "touches": 1
+    }
+   ],
+   "support_levels_nearest_first": [
+    {
+     "price": 4412.6,
+     "zone": [
+      4412.0,
+      4413.1
+     ],
+     "sources": [
+      "4H swing high",
+      "4H swing low"
+     ],
+     "touches": 2
+    },
+    {
+     "price": 4376.0,
+     "zone": [
+      4371.9,
+      4381.0
+     ],
+     "sources": [
+      "4H swing low",
+      "Daily swing low",
+      "Overnight low",
+      "Prior day close",
+      "Week open"
+     ],
+     "touches": 6
+    },
+    {
+     "price": 4365.5,
+     "zone": [
+      4365.5,
+      4365.5
+     ],
+     "sources": [
+      "Daily swing low"
+     ],
+     "touches": 1
+    },
+    {
+     "price": 4358.2,
+     "zone": [
+      4358.2,
+      4358.2
+     ],
+     "sources": [
+      "4H swing high"
+     ],
+     "touches": 1
+    },
+    {
+     "price": 4331.1,
+     "zone": [
+      4329.2,
+      4333.0
+     ],
+     "sources": [
+      "4H swing low",
+      "Daily swing low",
+      "Prior week low"
+     ],
+     "touches": 4
+    },
+    {
+     "price": 4301.6,
+     "zone": [
+      4301.6,
+      4301.6
+     ],
+     "sources": [
+      "4H swing low"
+     ],
+     "touches": 1
+    }
+   ],
+   "trendlines": {
+    "4h": {
+     "rising_support": null,
+     "falling_resistance": {
+      "timeframe": "4h",
+      "anchor_1": {
+       "time_ny": "Fri Sep 11 09:00",
+       "price": 4444.9
+      },
+      "anchor_2": {
+       "time_ny": "Fri Sep 18 01:00",
+       "price": 4439.8
+      },
+      "line_now": 4439.4,
+      "projected": {
+       "08:00_ny": 4439.6,
+       "09:30_ny": 4439.5,
+       "12:00_ny": 4439.4
+      },
+      "price_vs_line_now": "below",
+      "distance_now": -21.32
+     }
+    },
+    "1h": {
+     "rising_support": {
+      "timeframe": "1h",
+      "anchor_1": {
+       "time_ny": "Thu Sep 17 23:00",
+       "price": 4372.2
+      },
+      "anchor_2": {
+       "time_ny": "Fri Sep 18 10:00",
+       "price": 4381.0
+      },
+      "line_now": 4385.4,
+      "projected": {
+       "08:00_ny": 4379.4,
+       "09:30_ny": 4380.6,
+       "12:00_ny": 4382.6
+      },
+      "price_vs_line_now": "above",
+      "distance_now": 32.73
+     },
+     "falling_resistance": {
+      "timeframe": "1h",
+      "anchor_1": {
+       "time_ny": "Fri Sep 18 03:00",
+       "price": 4439.8
+      },
+      "anchor_2": {
+       "time_ny": "Fri Sep 18 13:00",
+       "price": 4435.2
+      },
+      "line_now": 4434.1,
+      "projected": {
+       "08:00_ny": 4437.5,
+       "09:30_ny": 4436.8,
+       "12:00_ny": 4435.7
+      },
+      "price_vs_line_now": "below",
+      "distance_now": -15.97
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,9 +1,9 @@
 {
  "source": "Dukascopy public datafeed, spot XAU/USD BID prices (no futures)",
- "generated_ny": "Fri Sep 18 2026 14:38",
+ "generated_ny": "Fri Sep 18 2026 15:27",
  "trading_day": "2026-09-18",
- "last_price_time_ny": "Fri Sep 18 13:59",
- "spot": 4392.86,
+ "last_price_time_ny": "Fri Sep 18 14:59",
+ "spot": 4381.86,
  "prior_day": {
   "date": "2026-09-17",
   "open": 4262.43,
@@ -11,42 +11,42 @@
   "low": 4257.11,
   "close": 4341.06
  },
- "change_vs_prior_close": 51.81,
+ "change_vs_prior_close": 40.81,
  "overnight": {
   "from_ny": "Thu 18:00",
   "to_ny": "Fri 07:00",
   "high": 4399.36,
   "low": 4334.1,
   "range": 65.26,
-  "pct_of_atr14": 62
+  "pct_of_atr14": 67
  },
- "week_open": 4333.31,
+ "week_open": 4288.07,
  "prior_week": {
   "high": 4442.7,
   "low": 4291.95
  },
- "atr14_daily": 105.36,
+ "atr14_daily": 96.99,
  "trend": {
   "daily": {
    "close": 4341.06,
-   "ema20": 4366.14,
-   "ema50": 4342.74,
+   "ema20": 4366.53,
+   "ema50": 4337.91,
    "last_two_swing_highs": [
     4696.64,
-    4510.64
+    4490.62
    ],
    "last_two_swing_lows": [
     4323.93,
-    4282.03
+    4322.52
    ],
    "swings": "lower highs and lower lows",
    "ema_stack": "mixed",
    "label": "Range"
   },
   "4h": {
-   "close": 4392.86,
-   "ema20": 4348.16,
-   "ema50": 4355.19,
+   "close": 4381.86,
+   "ema20": 4350.01,
+   "ema50": 4372.59,
    "last_two_swing_highs": [
     4380.81,
     4399.36
@@ -60,9 +60,9 @@
    "label": "Range"
   },
   "1h": {
-   "close": 4392.86,
-   "ema20": 4366.01,
-   "ema50": 4348.01,
+   "close": 4381.86,
+   "ema20": 4368.35,
+   "ema50": 4349.81,
    "last_two_swing_highs": [
     4380.81,
     4399.36
@@ -78,7 +78,7 @@
  },
  "resistance_levels_nearest_first": [
   {
-   "price": 4398.92,
+   "price": 4399.28,
    "zone": [
     4396.15,
     4402.27
@@ -88,7 +88,7 @@
     "4H swing low",
     "Overnight high"
    ],
-   "touches": 5
+   "touches": 4
   },
   {
    "price": 4415.57,
@@ -102,15 +102,15 @@
    "touches": 1
   },
   {
-   "price": 4434.45,
+   "price": 4435.11,
    "zone": [
-    4433.78,
+    4435.11,
     4435.11
    ],
    "sources": [
     "4H swing high"
    ],
-   "touches": 2
+   "touches": 1
   },
   {
    "price": 4442.7,
@@ -151,29 +151,17 @@
  ],
  "support_levels_nearest_first": [
   {
-   "price": 4381.17,
+   "price": 4381.25,
    "zone": [
     4380.81,
     4382.12
    ],
    "sources": [
     "4H swing high",
-    "4H swing low",
     "Daily swing high",
     "Prior day high"
    ],
-   "touches": 4
-  },
-  {
-   "price": 4374.47,
-   "zone": [
-    4374.47,
-    4374.47
-   ],
-   "sources": [
-    "4H swing low"
-   ],
-   "touches": 1
+   "touches": 3
   },
   {
    "price": 4365.96,
@@ -189,10 +177,10 @@
    "touches": 3
   },
   {
-   "price": 4341.01,
+   "price": 4343.03,
    "zone": [
-    4340.97,
-    4341.06
+    4341.06,
+    4345.02
    ],
    "sources": [
     "4H swing low",
@@ -201,23 +189,34 @@
    "touches": 2
   },
   {
-   "price": 4333.84,
+   "price": 4334.1,
    "zone": [
-    4333.31,
+    4334.1,
     4334.1
    ],
    "sources": [
     "4H swing low",
-    "Overnight low",
-    "Week open"
+    "Overnight low"
+   ],
+   "touches": 2
+  },
+  {
+   "price": 4322.99,
+   "zone": [
+    4322.52,
+    4323.93
+   ],
+   "sources": [
+    "4H swing low",
+    "Daily swing low"
    ],
    "touches": 3
   },
   {
-   "price": 4323.93,
+   "price": 4310.38,
    "zone": [
-    4323.93,
-    4323.93
+    4310.38,
+    4310.38
    ],
    "sources": [
     "Daily swing low"
@@ -227,24 +226,7 @@
  ],
  "trendlines": {
   "4h": {
-   "rising_support": {
-    "timeframe": "4h",
-    "anchor_1": {
-     "time_ny": "Wed Sep 16 13:00",
-     "price": 4234.66
-    },
-    "anchor_2": {
-     "time_ny": "Thu Sep 17 21:00",
-     "price": 4334.1
-    },
-    "line_now": 4383.82,
-    "projected": {
-     "08:00_ny": 4368.29,
-     "12:00_ny": 4380.72
-    },
-    "price_vs_line_now": "above",
-    "distance_now": 9.04
-   },
+   "rising_support": null,
    "falling_resistance": {
     "timeframe": "4h",
     "anchor_1": {
@@ -252,16 +234,16 @@
      "price": 4402.27
     },
     "anchor_2": {
-     "time_ny": "Fri Sep 18 02:00",
+     "time_ny": "Fri Sep 18 01:00",
      "price": 4399.36
     },
-    "line_now": 4399.17,
+    "line_now": 4399.15,
     "projected": {
-     "08:00_ny": 4399.26,
-     "12:00_ny": 4399.18
+     "08:00_ny": 4399.24,
+     "12:00_ny": 4399.17
     },
     "price_vs_line_now": "below",
-    "distance_now": -6.3
+    "distance_now": -17.28
    }
   },
   "1h": {
@@ -275,21 +257,28 @@
      "time_ny": "Fri Sep 18 10:00",
      "price": 4342.44
     },
-    "line_now": 4344.71,
+    "line_now": 4345.46,
     "projected": {
      "08:00_ny": 4340.92,
      "12:00_ny": 4343.95
     },
     "price_vs_line_now": "above",
-    "distance_now": 48.16
+    "distance_now": 36.4
    },
    "falling_resistance": null
   }
  },
  "recent_daily": [
   {
+   "trading_day": "Wed Sep 02",
+   "o": 4327.59,
+   "h": 4335.65,
+   "l": 4322.73,
+   "c": 4324.31
+  },
+  {
    "trading_day": "Fri Sep 04",
-   "o": 4472.61,
+   "o": 4479.9,
    "h": 4490.62,
    "l": 4365.31,
    "c": 4430.45
@@ -298,12 +287,12 @@
    "trading_day": "Mon Sep 07",
    "o": 4425.86,
    "h": 4434.93,
-   "l": 4380.94,
-   "c": 4404.77
+   "l": 4417.12,
+   "c": 4423.02
   },
   {
    "trading_day": "Tue Sep 08",
-   "o": 4407.27,
+   "o": 4422.61,
    "h": 4442.7,
    "l": 4345.02,
    "c": 4355.51
@@ -311,13 +300,13 @@
   {
    "trading_day": "Wed Sep 09",
    "o": 4356.88,
-   "h": 4433.78,
-   "l": 4340.97,
-   "c": 4400.85
+   "h": 4359.8,
+   "l": 4348.84,
+   "c": 4349.64
   },
   {
    "trading_day": "Thu Sep 10",
-   "o": 4402.36,
+   "o": 4393.95,
    "h": 4435.11,
    "l": 4313.5,
    "c": 4316.86
@@ -330,15 +319,8 @@
    "c": 4347.51
   },
   {
-   "trading_day": "Mon Sep 14",
-   "o": 4333.31,
-   "h": 4355.28,
-   "l": 4253.44,
-   "c": 4298.56
-  },
-  {
    "trading_day": "Tue Sep 15",
-   "o": 4298.89,
+   "o": 4288.07,
    "h": 4317.24,
    "l": 4261.1,
    "c": 4289.39
@@ -416,10 +398,10 @@
    "c": 4366.53
   },
   {
-   "ny": "Fri Sep 18 02:00",
-   "o": 4377.2,
+   "ny": "Fri Sep 18 01:00",
+   "o": 4366.57,
    "h": 4399.36,
-   "l": 4377.1,
+   "l": 4359.7,
    "c": 4392.1
   },
   {
@@ -440,25 +422,11 @@
    "ny": "Fri Sep 18 13:00",
    "o": 4382.86,
    "h": 4396.98,
-   "l": 4381.45,
-   "c": 4392.86
+   "l": 4379.32,
+   "c": 4381.86
   }
  ],
  "recent_1h": [
-  {
-   "ny": "Thu Sep 17 12:00",
-   "o": 4369.94,
-   "h": 4372.49,
-   "l": 4355.59,
-   "c": 4362.23
-  },
-  {
-   "ny": "Thu Sep 17 13:00",
-   "o": 4362.36,
-   "h": 4365.61,
-   "l": 4357.44,
-   "c": 4360.98
-  },
   {
    "ny": "Thu Sep 17 14:00",
    "o": 4361.19,
@@ -528,6 +496,13 @@
    "h": 4366.72,
    "l": 4352.3,
    "c": 4366.53
+  },
+  {
+   "ny": "Fri Sep 18 01:00",
+   "o": 4366.57,
+   "h": 4377.93,
+   "l": 4359.7,
+   "c": 4377.24
   },
   {
    "ny": "Fri Sep 18 02:00",
@@ -612,9 +587,23 @@
    "h": 4396.98,
    "l": 4381.45,
    "c": 4392.86
+  },
+  {
+   "ny": "Fri Sep 18 14:00",
+   "o": 4392.98,
+   "h": 4394.14,
+   "l": 4379.32,
+   "c": 4381.86
   }
  ],
  "failed_files": [
-  "2026/08/18/05h_ticks.bi5"
+  "2025/08/BID_candles_hour_1.bi5",
+  "2026/08/02/BID_candles_min_1.bi5",
+  "2026/08/03/BID_candles_min_1.bi5",
+  "2026/08/07/BID_candles_min_1.bi5",
+  "2026/08/09/BID_candles_min_1.bi5",
+  "2026/08/12/BID_candles_min_1.bi5",
+  "2026/08/13/BID_candles_min_1.bi5",
+  "2026/08/14/BID_candles_min_1.bi5"
  ]
 }
