@@ -1,9 +1,9 @@
 {
  "source": "Dukascopy public datafeed, spot XAU/USD BID prices (no futures)",
- "generated_ny": "Fri Sep 18 2026 12:05",
+ "generated_ny": "Fri Sep 18 2026 14:38",
  "trading_day": "2026-09-18",
- "last_price_time_ny": "Fri Sep 18 11:59",
- "spot": 4356.47,
+ "last_price_time_ny": "Fri Sep 18 13:59",
+ "spot": 4392.86,
  "prior_day": {
   "date": "2026-09-17",
   "open": 4262.43,
@@ -11,42 +11,42 @@
   "low": 4257.11,
   "close": 4341.06
  },
- "change_vs_prior_close": 15.41,
+ "change_vs_prior_close": 51.81,
  "overnight": {
   "from_ny": "Thu 18:00",
   "to_ny": "Fri 07:00",
   "high": 4399.36,
   "low": 4334.1,
   "range": 65.26,
-  "pct_of_atr14": 67
+  "pct_of_atr14": 62
  },
  "week_open": 4333.31,
  "prior_week": {
   "high": 4442.7,
   "low": 4291.95
  },
- "atr14_daily": 97.47,
+ "atr14_daily": 105.36,
  "trend": {
   "daily": {
    "close": 4341.06,
-   "ema20": 4369.68,
-   "ema50": 4341.02,
+   "ema20": 4366.14,
+   "ema50": 4342.74,
    "last_two_swing_highs": [
     4696.64,
-    4490.62
+    4510.64
    ],
    "last_two_swing_lows": [
-    4310.38,
-    4323.93
+    4323.93,
+    4282.03
    ],
-   "swings": "mixed swings",
+   "swings": "lower highs and lower lows",
    "ema_stack": "mixed",
    "label": "Range"
   },
   "4h": {
-   "close": 4356.47,
-   "ema20": 4341.07,
-   "ema50": 4358.81,
+   "close": 4392.86,
+   "ema20": 4348.16,
+   "ema50": 4355.19,
    "last_two_swing_highs": [
     4380.81,
     4399.36
@@ -60,63 +60,25 @@
    "label": "Range"
   },
   "1h": {
-   "close": 4356.47,
-   "ema20": 4362.24,
-   "ema50": 4346.0,
+   "close": 4392.86,
+   "ema20": 4366.01,
+   "ema50": 4348.01,
    "last_two_swing_highs": [
     4380.81,
     4399.36
    ],
    "last_two_swing_lows": [
-    4337.35,
-    4334.1
+    4334.1,
+    4342.44
    ],
-   "swings": "mixed swings",
-   "ema_stack": "mixed",
-   "label": "Range"
+   "swings": "higher highs and higher lows",
+   "ema_stack": "price > EMA20 > EMA50",
+   "label": "Uptrend"
   }
  },
  "resistance_levels_nearest_first": [
   {
-   "price": 4365.96,
-   "zone": [
-    4365.31,
-    4366.52
-   ],
-   "sources": [
-    "4H swing high",
-    "4H swing low",
-    "Daily swing low"
-   ],
-   "touches": 3
-  },
-  {
-   "price": 4374.47,
-   "zone": [
-    4374.47,
-    4374.47
-   ],
-   "sources": [
-    "4H swing low"
-   ],
-   "touches": 1
-  },
-  {
-   "price": 4381.17,
-   "zone": [
-    4380.81,
-    4382.12
-   ],
-   "sources": [
-    "4H swing high",
-    "4H swing low",
-    "Daily swing high",
-    "Prior day high"
-   ],
-   "touches": 4
-  },
-  {
-   "price": 4399.28,
+   "price": 4398.92,
    "zone": [
     4396.15,
     4402.27
@@ -126,7 +88,7 @@
     "4H swing low",
     "Overnight high"
    ],
-   "touches": 4
+   "touches": 5
   },
   {
    "price": 4415.57,
@@ -149,9 +111,83 @@
     "4H swing high"
    ],
    "touches": 2
+  },
+  {
+   "price": 4442.7,
+   "zone": [
+    4442.7,
+    4442.7
+   ],
+   "sources": [
+    "4H swing high",
+    "Prior week high"
+   ],
+   "touches": 2
+  },
+  {
+   "price": 4450.99,
+   "zone": [
+    4449.45,
+    4453.15
+   ],
+   "sources": [
+    "4H swing low",
+    "Daily swing high",
+    "Daily swing low"
+   ],
+   "touches": 3
+  },
+  {
+   "price": 4462.56,
+   "zone": [
+    4461.27,
+    4463.85
+   ],
+   "sources": [
+    "4H swing high"
+   ],
+   "touches": 2
   }
  ],
  "support_levels_nearest_first": [
+  {
+   "price": 4381.17,
+   "zone": [
+    4380.81,
+    4382.12
+   ],
+   "sources": [
+    "4H swing high",
+    "4H swing low",
+    "Daily swing high",
+    "Prior day high"
+   ],
+   "touches": 4
+  },
+  {
+   "price": 4374.47,
+   "zone": [
+    4374.47,
+    4374.47
+   ],
+   "sources": [
+    "4H swing low"
+   ],
+   "touches": 1
+  },
+  {
+   "price": 4365.96,
+   "zone": [
+    4365.31,
+    4366.52
+   ],
+   "sources": [
+    "4H swing high",
+    "4H swing low",
+    "Daily swing low"
+   ],
+   "touches": 3
+  },
   {
    "price": 4341.01,
    "zone": [
@@ -187,45 +223,28 @@
     "Daily swing low"
    ],
    "touches": 1
-  },
-  {
-   "price": 4317.24,
-   "zone": [
-    4317.24,
-    4317.24
-   ],
-   "sources": [
-    "4H swing high"
-   ],
-   "touches": 1
-  },
-  {
-   "price": 4310.38,
-   "zone": [
-    4310.38,
-    4310.38
-   ],
-   "sources": [
-    "Daily swing low"
-   ],
-   "touches": 1
-  },
-  {
-   "price": 4291.95,
-   "zone": [
-    4291.95,
-    4291.95
-   ],
-   "sources": [
-    "4H swing low",
-    "Prior week low"
-   ],
-   "touches": 2
   }
  ],
  "trendlines": {
   "4h": {
-   "rising_support": null,
+   "rising_support": {
+    "timeframe": "4h",
+    "anchor_1": {
+     "time_ny": "Wed Sep 16 13:00",
+     "price": 4234.66
+    },
+    "anchor_2": {
+     "time_ny": "Thu Sep 17 21:00",
+     "price": 4334.1
+    },
+    "line_now": 4383.82,
+    "projected": {
+     "08:00_ny": 4368.29,
+     "12:00_ny": 4380.72
+    },
+    "price_vs_line_now": "above",
+    "distance_now": 9.04
+   },
    "falling_resistance": {
     "timeframe": "4h",
     "anchor_1": {
@@ -233,35 +252,52 @@
      "price": 4402.27
     },
     "anchor_2": {
-     "time_ny": "Fri Sep 18 01:00",
+     "time_ny": "Fri Sep 18 02:00",
      "price": 4399.36
     },
-    "line_now": 4399.22,
+    "line_now": 4399.17,
     "projected": {
-     "08:00_ny": 4399.24,
-     "12:00_ny": 4399.17
+     "08:00_ny": 4399.26,
+     "12:00_ny": 4399.18
     },
     "price_vs_line_now": "below",
-    "distance_now": -42.75
+    "distance_now": -6.3
    }
   },
   "1h": {
-   "rising_support": null,
+   "rising_support": {
+    "timeframe": "1h",
+    "anchor_1": {
+     "time_ny": "Thu Sep 17 23:00",
+     "price": 4334.1
+    },
+    "anchor_2": {
+     "time_ny": "Fri Sep 18 10:00",
+     "price": 4342.44
+    },
+    "line_now": 4344.71,
+    "projected": {
+     "08:00_ny": 4340.92,
+     "12:00_ny": 4343.95
+    },
+    "price_vs_line_now": "above",
+    "distance_now": 48.16
+   },
    "falling_resistance": null
   }
  },
  "recent_daily": [
   {
    "trading_day": "Fri Sep 04",
-   "o": 4479.9,
+   "o": 4472.61,
    "h": 4490.62,
    "l": 4365.31,
    "c": 4430.45
   },
   {
    "trading_day": "Mon Sep 07",
-   "o": 4422.91,
-   "h": 4429.23,
+   "o": 4425.86,
+   "h": 4434.93,
    "l": 4380.94,
    "c": 4404.77
   },
@@ -324,13 +360,6 @@
  ],
  "recent_4h": [
   {
-   "ny": "Wed Sep 16 13:00",
-   "o": 4346.24,
-   "h": 4366.52,
-   "l": 4234.66,
-   "c": 4262.94
-  },
-  {
    "ny": "Wed Sep 16 18:00",
    "o": 4262.43,
    "h": 4292.2,
@@ -387,10 +416,10 @@
    "c": 4366.53
   },
   {
-   "ny": "Fri Sep 18 01:00",
-   "o": 4366.57,
+   "ny": "Fri Sep 18 02:00",
+   "o": 4377.2,
    "h": 4399.36,
-   "l": 4359.7,
+   "l": 4377.1,
    "c": 4392.1
   },
   {
@@ -403,19 +432,19 @@
   {
    "ny": "Fri Sep 18 09:00",
    "o": 4368.56,
-   "h": 4375.27,
+   "h": 4383.56,
    "l": 4342.44,
-   "c": 4356.47
+   "c": 4382.77
+  },
+  {
+   "ny": "Fri Sep 18 13:00",
+   "o": 4382.86,
+   "h": 4396.98,
+   "l": 4381.45,
+   "c": 4392.86
   }
  ],
  "recent_1h": [
-  {
-   "ny": "Thu Sep 17 11:00",
-   "o": 4353.8,
-   "h": 4370.15,
-   "l": 4351.1,
-   "c": 4369.98
-  },
   {
    "ny": "Thu Sep 17 12:00",
    "o": 4369.94,
@@ -501,13 +530,6 @@
    "c": 4366.53
   },
   {
-   "ny": "Fri Sep 18 01:00",
-   "o": 4366.57,
-   "h": 4377.93,
-   "l": 4359.7,
-   "c": 4377.24
-  },
-  {
    "ny": "Fri Sep 18 02:00",
    "o": 4377.2,
    "h": 4397.01,
@@ -576,14 +598,23 @@
    "h": 4357.89,
    "l": 4347.73,
    "c": 4356.47
+  },
+  {
+   "ny": "Fri Sep 18 12:00",
+   "o": 4356.56,
+   "h": 4383.56,
+   "l": 4354.47,
+   "c": 4382.77
+  },
+  {
+   "ny": "Fri Sep 18 13:00",
+   "o": 4382.86,
+   "h": 4396.98,
+   "l": 4381.45,
+   "c": 4392.86
   }
  ],
  "failed_files": [
-  "2026/08/01/BID_candles_min_1.bi5",
-  "2025/10/BID_candles_hour_1.bi5",
-  "2026/08/02/BID_candles_min_1.bi5",
-  "2026/08/03/BID_candles_min_1.bi5",
-  "2026/08/06/BID_candles_min_1.bi5",
-  "2026/08/05/BID_candles_min_1.bi5"
+  "2026/08/18/05h_ticks.bi5"
  ]
 }
