@@ -23,9 +23,9 @@ SCALE = 1000.0
 FAILED = []
 
 
-def fetch(path):
+def fetch(path, attempts=3):
     """Decompressed bytes; b"" for an empty or missing file; None when every attempt failed."""
-    for attempt in range(3):
+    for attempt in range(attempts):
         try:
             req = urllib.request.Request(BASE + path, headers={"User-Agent": "Mozilla/5.0"})
             raw = urllib.request.urlopen(req, timeout=30).read()
@@ -188,14 +188,17 @@ def main():
     today = now.date()
     hours = list(range(0, now.hour))
 
-    jobs = {}
+    jobs, paths = {}, {}
     with ThreadPoolExecutor(max_workers=6) as ex:
+        def submit(key, path):
+            paths[key] = path
+            jobs[key] = ex.submit(fetch, path)
         for (yy, mm) in months:
-            jobs[("M", yy, mm)] = ex.submit(fetch, f"{month_path(yy, mm)}/BID_candles_hour_1.bi5")
+            submit(("M", yy, mm), f"{month_path(yy, mm)}/BID_candles_hour_1.bi5")
         for d in days:
-            jobs[("D", d)] = ex.submit(fetch, f"{month_path(d.year, d.month)}/{d.day:02d}/BID_candles_min_1.bi5")
+            submit(("D", d), f"{month_path(d.year, d.month)}/{d.day:02d}/BID_candles_min_1.bi5")
         for h in hours:
-            jobs[("T", h)] = ex.submit(fetch, f"{month_path(today.year, today.month)}/{today.day:02d}/{h:02d}h_ticks.bi5")
+            submit(("T", h), f"{month_path(today.year, today.month)}/{today.day:02d}/{h:02d}h_ticks.bi5")
         # Most recent completed month may not be published yet: fall back to its daily minute files.
         ly, lm = months[0]
         month_missing = False
@@ -205,9 +208,17 @@ def main():
             first = dt.date(ly, lm, 1)
             d = first
             while d.month == lm:
-                jobs[("D", d)] = ex.submit(fetch, f"{month_path(d.year, d.month)}/{d.day:02d}/BID_candles_min_1.bi5")
+                submit(("D", d), f"{month_path(d.year, d.month)}/{d.day:02d}/BID_candles_min_1.bi5")
                 d += dt.timedelta(days=1)
         results = {k: f.result() for k, f in jobs.items()}
+
+    # Dukascopy drops some requests during the parallel burst, and every missing day leaves a
+    # hole in the 1h, 4h and daily bars. Retry those files one at a time once the burst is over.
+    failed_keys = [k for k, v in results.items() if v is None]
+    if failed_keys:
+        FAILED.clear()
+        for k in failed_keys:
+            results[k] = fetch(paths[k], attempts=2)
 
     hourly, minutes = [], []
     for (yy, mm) in months:
